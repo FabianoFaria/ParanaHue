@@ -1,0 +1,277 @@
+/*
+Theme Name: ParanaHue
+Theme URI: 
+Author: Fabiano Faria
+Author URI: https://wordpress.org/
+Description: Tema para o blog ParanaHue
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: ParanaHue
+
+Este tema está em desenvolvimento´para ser utilizado no blog ParanaHue...
+
+*/
+
+@import url('bootstrap/css/bootstrap.css'); 
+/* @import url('bootstrap/css/bootstrap-responsive.css'); */
+
+@font-face {
+  font-family: "Allura";
+  src: url("fonts/Allura-Regular.ttf") format("truetype");
+}
+
+
+body { 
+     background-color: #008d43;
+}
+
+.row_nopadding{
+	padding-left: 0px;
+	padding-right: 0px;
+
+}
+
+.row_nomargim {
+	margin-left: 0px;
+	margin-right: 0px;
+	
+}
+
+.middle_page {
+	background-color: #ffffff;
+}
+
+.real_content{
+	background-color: #ffffff;
+	border-bottom: 1px solid black;
+}
+
+.side_content{
+	
+}
+
+.footer_content{
+	background-color: #2549a5;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	height: 110px;
+	width: 100%;
+}
+
+/* Header e menu principal */
+
+.header_block{
+	background: url("images_hue/header_img.png") no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 230px;
+}
+
+.header_menu {
+	background-color: #ffffff;
+    bottom: 65px;
+	width: 65%;
+	height: 120px;
+	background-color: rgba(255,255,255,0.5);
+	float: left;
+	margin-top: 110px;
+}
+
+.header_menu h2{
+	font-size: 50px;
+	font-family: "Allura";
+	color: #000000;
+	margin-left: 15px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+@media(max-width: 360px){
+	.header_menu {
+		width: 100%;
+	}
+}/*/mediaquery*/
+
+/* footer */
+
+.footer_title{
+	margin-top: 0px;
+	padding-top: 5px;
+	padding-left: 30px;
+	font-family: "Allura";
+	color: #000000;
+	font-size: 25px;
+}
+
+/* menu principal */
+
+ul#menu-menu_principal.menu{
+	margin-left: -25px;	
+}
+
+#menu-menu_principal li{
+	list-style: none;
+	display: inline;
+}
+
+#menu-menu_principal li a{
+	font-family: "Allura";
+	font-size: 40px;
+	color: #000000;
+	border-right: 2px solid black;
+	padding-right: 15px;
+
+}
+
+/* barra de pesquisa */
+
+.form_pesquisa {
+	float: right;
+	height: 120px;
+	width: 35%;
+	margin-top: 110px;
+}
+
+@media(max-width: 360px){
+	.form_pesquisa {
+		float: left;
+		margin-top: 0px;
+		height: 120px;
+		width: 100%;
+	}
+}/*/mediaquery*/
+
+
+
+#s{
+	height: 45px;
+	width: 125px;
+
+	background: #ffffff none repeat scroll 0% 0%;
+	border-width: 2px medium 2px 2px;
+	border-style: solid none solid solid;
+	border-color: #5f5f5c -moz-use-text-color #5f5f5c #5f5f5c;
+	
+	
+	padding: 10px;
+	outline: medium none;
+}
+
+#searchsubmit{
+	background: #bcbba8 none repeat scroll 0% 0%;
+	box-shadow: none;
+	border-width: 2px 2px 2px medium;
+	border-style: solid solid solid none;
+	border-color: #5f5f5c #5f5f5c #5f5f5c -moz-use-text-color;
+
+	color: #5f5f5c;
+	font-family: "Allura";
+	font-size: 20px;
+
+	height: 45px;
+	padding: 8px 13px;
+	margin-left: -7px;
+	
+	outline: medium none;
+}
+
+#searchform {
+	margin-top: 75px;
+}
+
+.corpo_pagina{
+	min-height: 450px;
+}
+
+.corpo_resultado {
+	border: 1px solid black;
+	min-height: 300px;
+}
+
+/* post exibidos */
+
+.post_cadastrado{
+
+	border: 1px solid black;
+	background-color: #ffffff;
+	min-height: 250px;
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.post_titulo {
+	color: #2549a5;
+	font-family: "Allura";
+	font-size: 45px;
+
+}
+
+/* single page */
+
+.titulo_single{
+	text-align: center;
+	font-family: "Allura";
+	color: #000000;
+	font-size: 45px;
+
+}
+
+.artigo p{
+	text-align: center;
+}
+
+.pagina_principal_artigo {
+
+	text-align: center;
+}
+
+/*page sobre */
+
+.title_sobre {
+	text-align: center;
+	font-family: "Allura";
+	color: #2549a5;
+	font-size: 45px;
+}
+
+/* Page contato */
+
+.wpcf7-form-control.wpcf7-submit {
+	text-align: center;
+	font-family: "Allura";
+	color: #2549a5;
+	font-size: 25px;
+}
+
+/* Contudo Lateral */
+
+.conteudo_lateral{
+	border: 1px solid black;
+	min-height: 250px;
+	margin-top: 248px;
+}
+
+.conteudo_lateral h2{
+	text-align: center;
+	font-family: "Allura";
+	color: #2549a5;
+	font-size: 25px;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #000000;
+}
+
+.text_mobile_menu {
+	font-family: "Allura";
+	font-size: 20px;
+	float: right;
+	color: #000000;
+	margin-left: 30px;
+	margin-top: -17px;
+}
