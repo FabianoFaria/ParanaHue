@@ -137,7 +137,7 @@ ul#menu-menu_principal.menu{
 
 @media(max-width: 360px){
 	.form_pesquisa {
-		float: left;
+		float: right;
 		margin-top: 0px;
 		height: 120px;
 		width: 100%;
@@ -180,6 +180,11 @@ ul#menu-menu_principal.menu{
 
 #searchform {
 	margin-top: 75px;
+}
+@media(max-width: 360px){
+	#searchform{
+		float: right;
+	}
 }
 
 .corpo_pagina{
@@ -263,6 +268,8 @@ ul#menu-menu_principal.menu{
 	font-size: 25px;
 }
 
+/* Menu de canvas... */
+
 .navbar-toggle .icon-bar {
 	background-color: #000000;
 }
@@ -274,4 +281,42 @@ ul#menu-menu_principal.menu{
 	color: #000000;
 	margin-left: 30px;
 	margin-top: -17px;
+}
+
+.navbar-toggle
+{
+	background-color: #BCBBA8;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #ffffff;
+}
+
+
+
+.navbar-gray {
+
+	display: inline-block;
+	box-shadow: 8px 12px 0 -8px grey;
+}
+
+.menu_response
+{
+	margin-left: 0px !important;
+    margin-right: 0px !important;
+	max-height: 365px;
+	width: 100%
+}
+
+.navbar-responsive-collapse {
+	background-color: #ffffff;
+}
+
+.navbar-collapse {
+	padding: 0;
+}
+
+/* Adiciona a borda preta sobre o header*/
+.navbar-collapse.collapse{ 
+
 }

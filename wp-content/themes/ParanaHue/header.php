@@ -26,6 +26,10 @@
 	<!-- Le styles -->
 	<link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
 
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/bootstrap/js/jquery.js"></script>
+
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/bootstrap/js/bootstrap.js"></script>
+
 	<?php wp_head(); ?>
 </head>
 
@@ -44,9 +48,27 @@
 							<div class="header_block">
 								<div class="header_menu">
 									<h2><?php bloginfo("name"); ?></h2>
-									<span class="hidden-xs">
-										<?php wp_nav_menu('Menu_principal'); ?>
-									</span>
+
+									<div class="collapse navbar-collapse navbar-responsive-collapse menu_response"> <!-- navbar-header collapse navbar-collapse navbar-responsive-collapse header -->
+						
+										<div class="navbar-gray pull-right">
+											<?php
+
+												wp_nav_menu( array(
+												  'menu' => 'Menu_principal',
+												  'depth' => 2,
+												  'container' => false,
+												  'menu_class' => 'nav',
+												  //Process nav menu using our custom nav walker
+												  'walker' => new Bootstrap_Walker())
+												);
+
+											 ?>
+										</div>
+
+									</div>
+
+
 
 									<div class="col-xs-12 btn_phone">
 										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -60,7 +82,7 @@
 										</button>
 									</div> <!-- btn_phone  -->
 								</div>
-								<div class="col-xs-12 form_pesquisa row_nopadding">
+								<div class="form_pesquisa row_nopadding">
 									<?php get_search_form( ); ?>
 								</div>
 							</div>
