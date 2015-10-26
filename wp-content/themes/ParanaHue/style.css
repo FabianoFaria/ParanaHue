@@ -126,6 +126,17 @@ ul#menu-menu_principal.menu{
 
 }
 
+@media(max-width: 360px){
+	#menu-menu_principal li a{
+		background-color: #ffffff;
+		font-size: 20px;
+	}
+
+	.btn_phone{
+		z-index: 4000;
+	}
+}
+
 /* barra de pesquisa */
 
 .form_pesquisa {
@@ -297,7 +308,6 @@ ul#menu-menu_principal.menu{
 .navbar-gray {
 
 	display: inline-block;
-	box-shadow: 8px 12px 0 -8px grey;
 }
 
 .menu_response
@@ -309,7 +319,7 @@ ul#menu-menu_principal.menu{
 }
 
 .navbar-responsive-collapse {
-	background-color: #ffffff;
+	/* background-color: #ffffff; background do menu  */  
 }
 
 .navbar-collapse {
@@ -317,6 +327,22 @@ ul#menu-menu_principal.menu{
 }
 
 /* Adiciona a borda preta sobre o header*/
-.navbar-collapse.collapse{ 
 
+@media(max-width: 360px){
+	.navbar-collapse.collapse{ 
+		background-color: #ffffff;
+		z-index: 4000;
+		height: 150px;
+	}
+}
+
+
+.nav > li > a{
+	display: inline;
+}
+@media(max-width: 360px){
+	.nav > li > a{
+		display: block;
+		z-index: 3000;
+	}
 }

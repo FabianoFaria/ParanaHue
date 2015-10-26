@@ -51,7 +51,7 @@
 
 									<div class="collapse navbar-collapse navbar-responsive-collapse menu_response"> <!-- navbar-header collapse navbar-collapse navbar-responsive-collapse header -->
 						
-										<div class="navbar-gray pull-right">
+										<div class="navbar-gray">
 											<?php
 
 												wp_nav_menu( array(
