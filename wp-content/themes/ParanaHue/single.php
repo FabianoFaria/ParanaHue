@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+	
+
+
 	<div class="row">
 		<div class="col-md-12 corpo_pagina">
 
@@ -12,6 +15,10 @@
 							<h1 class="titulo_single"><?php the_title(); ?></h1>
 						
 							<p><?php the_content(); ?></p>
+
+
+							<div class="fb-comments" data-href="http://paranahue.com.br/?p=<?php the_ID(); ?>" data-width="320" data-numposts="5"></div>
+
 						</div>
 						
 	

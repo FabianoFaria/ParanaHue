@@ -7,7 +7,7 @@
 
 
 // Get BootStrap Walker....
-require_once('Bootstrap_walker.php');            // core functions (don't remove)
+require_once('bootstrap_walker.php');            // core functions (don't remove)
 
 
 /* Theme setup */

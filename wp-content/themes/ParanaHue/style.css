@@ -72,8 +72,8 @@ body {
 
 .header_menu {
 	background-color: #ffffff;
-    bottom: 65px;
-	width: 65%;
+    bottom: 0px;
+	/*width: 65%;*/
 	height: 120px;
 	background-color: rgba(255,255,255,0.5);
 	float: left;
@@ -142,7 +142,7 @@ ul#menu-menu_principal.menu{
 .form_pesquisa {
 	float: right;
 	height: 120px;
-	width: 35%;
+	/*width: 35%;*/
 	margin-top: 110px;
 }
 
@@ -242,8 +242,13 @@ ul#menu-menu_principal.menu{
 }
 
 .pagina_principal_artigo {
-
 	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 45px;
+}
+
+.pagina_principal_artigo h2{
+	font-size: 25px;
 }
 
 /*page sobre */

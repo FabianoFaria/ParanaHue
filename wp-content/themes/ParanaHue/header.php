@@ -36,6 +36,16 @@
 <body>
 	
 	
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=518349164999975";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	
 	<div class="row row_nomargim">
 		<div class="col-md-2"></div>
 		<div class="col-md-8 middle_page">
@@ -46,7 +56,7 @@
 
 						<div class="row row_nomargim">
 							<div class="header_block">
-								<div class="header_menu">
+								<div class="col-md-8 col-lg-7 header_menu">
 									<h2><?php bloginfo("name"); ?></h2>
 
 									<div class="collapse navbar-collapse navbar-responsive-collapse menu_response"> <!-- navbar-header collapse navbar-collapse navbar-responsive-collapse header -->
@@ -82,7 +92,7 @@
 										</button>
 									</div> <!-- btn_phone  -->
 								</div>
-								<div class="form_pesquisa row_nopadding">
+								<div class="col-md-4 col-lg-5 form_pesquisa row_nopadding">
 									<?php get_search_form( ); ?>
 								</div>
 							</div>
